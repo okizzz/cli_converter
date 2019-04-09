@@ -1,0 +1,11 @@
+VBoxManage list vms | awk '{print $10}'
+
+/opt/genymobile/genymotion/player --vm-name '1ecc87c5-e2b9-47b4-b417-6f83346b5469' --poweroff
+
+/opt/genymobile/genymotion/player --vm-name '1ecc87c5-e2b9-47b4-b417-6f83346b5469'
+
+dump -g | grep "+7" | sed s/[^0-9+]//g
+
+adb shell monkey -p org.telegram.messenger -c android.intent.category.LAUNCHER 1
+
+adb shell input tap 51.9 111.9
